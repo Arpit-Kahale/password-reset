@@ -54,7 +54,7 @@ password-reset-app/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/password-reset.git
+https://github.com/Arpit-Kahale/password-reset.git
 ```
 
 ---
