@@ -1,9 +1,10 @@
-const express = require("express");
-const router = express.Router();
+const mongoose = require("mongoose");
 
-const authController = require("../controllers/authController");
+const userSchema = new mongoose.Schema({
+  email: String,
+  password: String,
+  resetToken: String,
+  resetTokenExpire: Date
+});
 
-router.post("/forgot-password", authController.forgotPassword);
-router.post("/reset-password/:token", authController.resetPassword);
-
-module.exports = router;
+module.exports = mongoose.model("User", userSchema);
