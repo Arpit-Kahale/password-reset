@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/auth";
+const API = "https://password-reset-y3qu.onrender.com/api/auth";
 
 export const forgotPassword = (email) => {
   return axios.post(`${API}/forgot-password`, { email });
