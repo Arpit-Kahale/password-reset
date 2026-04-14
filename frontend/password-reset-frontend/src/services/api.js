@@ -1,1 +1,1 @@
-export const API = "https://password-reset-y3qu.onrender.com/api";
+export const API = "https://password-reset-y3qu.onrender.com/api/auth";
